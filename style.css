@@ -1,0 +1,109 @@
+:root {
+	--Orange: hsl(25, 97%, 53%);
+	--White: hsl(0, 0%, 100%);
+	--Light-Grey: hsl(217, 12%, 63%);
+	--Dark-Blue: hsl(213, 19%, 18%);
+	--Very-Dark-Blue: hsl(216, 12%, 8%);
+	--accent-color: hsl(215, 18%, 23%);
+	font-family: "Overpass", sans-serif;
+	font-weight: 400;
+	--fw-bold: 700;
+	font-size: 15px;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: var(--Very-Dark-Blue);
+}
+ul {
+	list-style: none;
+}
+h1 {
+	font-weight: var(--fw-bold);
+	color: var(--White);
+}
+.ratings,
+.thankyou {
+	background-color: var(--Dark-Blue);
+	border-radius: 1.5rem;
+	padding: 2rem;
+	max-width: 420px;
+	color: var(--Light-Grey);
+	line-height: 1.5;
+}
+.ratings h1 {
+	margin-block: 0.5rem;
+}
+
+.ratings img {
+	padding: 0.7rem;
+	background-color: var(--accent-color);
+	border-radius: 50%;
+}
+.ratings ul {
+	display: flex;
+	justify-content: space-between;
+	margin-block: 1.3rem;
+}
+.ratings ul li button {
+	height: 3rem;
+	width: 3rem;
+	outline: none;
+	border: none;
+	border-radius: 50%;
+	background-color: var(--accent-color);
+	color: var(--Light-Grey);
+	font-weight: var(--fw-bold);
+	cursor: pointer;
+	transition: 500ms;
+}
+.ratings ul li button:hover {
+	background-color: var(--Orange);
+	color: var(--Very-Dark-Blue);
+}
+.ratings ul li button:focus,
+.submit:hover {
+	background-color: var(--White);
+	color: var(--Very-Dark-Blue);
+}
+.submit {
+	letter-spacing: 2px;
+	width: 100%;
+	background-color: var(--Orange);
+	outline: none;
+	border: none;
+	padding: 0.825rem;
+	font-weight: var(--fw-bold);
+	color: var(--Very-Dark-Blue);
+	border-radius: 1.5rem;
+	cursor: pointer;
+}
+
+.thankyou {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	gap: 1.5rem;
+}
+.thankyou img {
+	margin: 1rem auto;
+}
+.thankyou-p {
+	background-color: var(--accent-color);
+	border-radius: 1.5rem;
+	padding: 0.3rem 0 0.2rem;
+	color: var(--Orange);
+}
+.hidden {
+	display: none;
+}
